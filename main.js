@@ -55,17 +55,17 @@ function addStar() {
 
 Array(250).fill().forEach(addStar)
 
-const spaceTexture = new THREE.TextureLoader().load('public/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('/images/space.jpg');
 scene.background = spaceTexture;
 
-const antonTexture = new THREE.TextureLoader().load('public/me.jpg');
+const antonTexture = new THREE.TextureLoader().load('/images/me.jpg');
 
 const anton = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({map:antonTexture})
 );
 
-const moonTexture = new THREE.TextureLoader().load('public/moon.jpg')
+const moonTexture = new THREE.TextureLoader().load('/images/moon.jpg')
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
